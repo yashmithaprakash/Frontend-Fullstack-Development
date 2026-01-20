@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #0055a5;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background-image: url("../images/campus.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.main-header {
+    background-color: #003366;
+    padding: 15px 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
