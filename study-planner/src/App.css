@@ -1,57 +1,148 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #3c3c3c, #969398);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
+/* MAIN CARD */
 .container {
-  width: 450px;
+  width: 520px;
   margin: 40px auto;
-  background: #fff;
+  background: #ffffff;
   padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-h1 { text-align: center; }
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
 
+/* HEADINGS */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+h3 {
+  text-align: center;
+  color: #555;
+}
+
+/* INPUT */
 input {
-  padding: 8px;
-  border-radius: 8px;
+  width: 65%;
+  padding: 10px;
+  border-radius: 12px;
   border: 1px solid #ccc;
-  margin: 5px;
+  margin: 6px;
+  outline: none;
+  transition: 0.3s;
 }
 
+input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79, 172, 254, 0.5);
+}
+
+/* BUTTON */
 button {
-  padding: 6px 10px;
-  border-radius: 8px;
+  padding: 8px 14px;
+  border-radius: 12px;
   border: none;
   cursor: pointer;
-  background: #42444c;
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
   color: white;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-button:hover { background: #000000; }
+button:hover {
+  transform: scale(1.05);
+}
 
+/* LOGOUT */
+.logout-btn {
+  background: #ff4d4d;
+}
+
+/* SUBJECT CARD */
 .subject-box {
-  background: #f5f5f5;
-  padding: 12px;
+  background: #f8fbff;
+  padding: 15px;
   margin: 12px 0;
-  border-radius: 10px;
+  border-radius: 15px;
+  border-left: 5px solid #4facfe;
+  transition: 0.3s;
 }
 
+.subject-box:hover {
+  transform: translateY(-3px);
+}
+
+/* SUBJECT HEADER */
 .subject-header {
   display: flex;
   justify-content: space-between;
 }
 
-.plan-box {
-  background: #eef2ff;
+/* TASK LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  margin: 8px 0;
   padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* PLAN BOX */
+.plan-box {
+  background: #eef7ff;
+  padding: 12px;
   border-radius: 10px;
 }
 
-.logout-btn {
-  float: right;
-  background: red;
+/* TABLE (FINISHED PAGE) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #4facfe;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f4f9ff;
+}
+
+/* SCROLL */
+.container {
+  max-height: 90vh;
+  overflow-y: auto;
 }
